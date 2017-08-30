@@ -22,7 +22,7 @@ void MaquinaDeEstadosFinitos::setEstadoInicial(Estado * e)
 	atual = inicial = e;
 }
 
-list<Acao*>* MaquinaDeEstadosFinitos::atualizar()
+list<Acao*>* MaquinaDeEstadosFinitos::atualizar(Ambiente *a)
 {
 	Transicao *disparada = NULL;
 
@@ -46,6 +46,9 @@ list<Acao*>* MaquinaDeEstadosFinitos::atualizar()
 				saida->push_back((*it));
 			}
 			for (it = alvo->getAcoesAoEntrar()->begin(); it != alvo->getAcoesAoEntrar()->end(); it++) {
+				saida->push_back((*it));
+			}
+			for (it = alvo->getAcoes()->begin(); it != alvo->getAcoes()->end(); it++) {
 				saida->push_back((*it));
 			}
 			atual = alvo;

@@ -51,6 +51,21 @@
     <ClInclude Include="CondicaoNao.h">
       <Filter>Arquivos de Cabeçalho\Condicoes</Filter>
     </ClInclude>
+    <ClInclude Include="Ambiente.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Quimera.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="CondicaoAmbiente.h">
+      <Filter>Arquivos de Cabeçalho\Condicoes</Filter>
+    </ClInclude>
+    <ClInclude Include="Agente.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Controle.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -70,6 +85,15 @@
     </ClCompile>
     <ClCompile Include="CondicaoNao.cpp">
       <Filter>Arquivos de Origem\Condicoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Ambiente.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="CondicaoAmbiente.cpp">
+      <Filter>Arquivos de Origem\Condicoes</Filter>
+    </ClCompile>
+    <ClCompile Include="Agente.cpp">
+      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

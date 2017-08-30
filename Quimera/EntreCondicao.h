@@ -1,6 +1,6 @@
 #pragma once
 #include "Condicao.h"
-template<class Alias>
+template<typename Alias>
 class EntreCondicao : public Condicao
 {
 private:
@@ -16,7 +16,7 @@ public:
 	}
 
 	bool testar() {
-		return minValue <= valor <= maxValue;
+		return (minValue >= valor) && (valor <= maxValue);
 	}
 };
 

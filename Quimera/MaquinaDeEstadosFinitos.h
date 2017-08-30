@@ -1,10 +1,11 @@
 #pragma once
 #include <list>
-#include "Estado.h"
+#include "Estado.h"]
+#include "Controle.h"
 
 using namespace std;
 
-class MaquinaDeEstadosFinitos
+class MaquinaDeEstadosFinitos: public Controle
 {
 private:
 	list<Estado*> *lstEstados;
@@ -17,6 +18,6 @@ public:
 
 	void addEstado(Estado *e);
 	void setEstadoInicial(Estado *e);
-	list<Acao*>* atualizar();
+	list<Acao*>* atualizar(Ambiente *e);
 };
 

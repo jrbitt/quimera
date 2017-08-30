@@ -4,10 +4,10 @@
 
 Estado::Estado()
 {
-	lstAgir = NULL;
-	lstEntrar = NULL;
-	lstSair = NULL;
-	lstTransicoes = NULL;
+	lstAgir = new list<Acao*>;
+	lstEntrar = new list<Acao*>;
+	lstSair = new list<Acao*>;
+	lstTransicoes = new list<Transicao*>;
 }
 
 
