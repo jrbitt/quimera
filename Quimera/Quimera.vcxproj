@@ -142,7 +142,9 @@
     <ClInclude Include="Controle.h" />
     <ClInclude Include="EntreCondicao.h" />
     <ClInclude Include="Estado.h" />
+    <ClInclude Include="HierarquiaBase.h" />
     <ClInclude Include="MaquinaDeEstadosFinitos.h" />
+    <ClInclude Include="MaquinaDeEstadosHierarquica.h" />
     <ClInclude Include="Quimera.h" />
     <ClInclude Include="Transicao.h" />
   </ItemGroup>
@@ -154,7 +156,9 @@
     <ClCompile Include="CondicaoNao.cpp" />
     <ClCompile Include="CondicaoOu.cpp" />
     <ClCompile Include="Estado.cpp" />
+    <ClCompile Include="HierarquiaBase.cpp" />
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
+    <ClCompile Include="MaquinaDeEstadosHierarquica.cpp" />
     <ClCompile Include="Transicao.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

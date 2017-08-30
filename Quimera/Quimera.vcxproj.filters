@@ -66,6 +66,12 @@
     <ClInclude Include="Controle.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="HierarquiaBase.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="MaquinaDeEstadosHierarquica.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -93,6 +99,12 @@
       <Filter>Arquivos de Origem\Condicoes</Filter>
     </ClCompile>
     <ClCompile Include="Agente.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="HierarquiaBase.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="MaquinaDeEstadosHierarquica.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>

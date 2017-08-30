@@ -43,3 +43,13 @@ void Transicao::addAcao(Acao * a)
 {
 	lstAcoes->push_back(a);
 }
+
+void Transicao::setNivel(int n)
+{
+	nivel = n;
+}
+
+int Transicao::getNivel()
+{
+	return nivel;
+}

@@ -12,6 +12,7 @@ private:
 	Estado *alvo;
 	list<Acao*> *lstAcoes;
 	Condicao* condicao;
+	int nivel;
 
 public:
 	Transicao();
@@ -24,5 +25,8 @@ public:
 	void setEstadoAlvo(Estado *alvo);
 	void setCondicao(Condicao *c);
 	void addAcao(Acao *a);
+
+	void setNivel(int n);
+	int getNivel();
 };
 

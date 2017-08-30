@@ -8,6 +8,8 @@ Estado::Estado()
 	lstEntrar = new list<Acao*>;
 	lstSair = new list<Acao*>;
 	lstTransicoes = new list<Transicao*>;
+	lstEstados = new list<Estado*>;
+	lstEstados->push_back(this);
 }
 
 
@@ -51,4 +53,9 @@ list<Acao*>* Estado::getAcoesAoSair()
 list<Transicao*>* Estado::getTransicoes()
 {
 	return lstTransicoes;
+}
+
+list<Estado*>* Estado::getEstados()
+{
+	return lstEstados;
 }

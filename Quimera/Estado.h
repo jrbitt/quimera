@@ -1,6 +1,7 @@
 #pragma once
 #include "Acao.h"
 #include "Transicao.h"
+#include "HierarquiaBase.h"
 #include <list>
 using namespace std;
 
@@ -12,13 +13,15 @@ enum EstadoMomento {
 	AO_SAIR
 };
 
-class Estado
+class Estado: public HierarquiaBase
 {
 private:
 	list<Acao*> *lstAgir;
 	list<Acao*> *lstEntrar;
 	list<Acao*> *lstSair;
 	list<Transicao*> *lstTransicoes;
+
+	list<Estado*>* lstEstados;
 
 public:
 	Estado();
@@ -32,5 +35,7 @@ public:
 	list<Acao*>* getAcoesAoSair();
 
 	list<Transicao*>* getTransicoes();
+
+	list<Estado*>* getEstados();
 };
 
