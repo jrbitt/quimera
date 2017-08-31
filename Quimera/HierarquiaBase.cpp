@@ -11,9 +11,19 @@ HierarquiaBase::~HierarquiaBase()
 {
 }
 
-Resultado HierarquiaBase::atualizar()
+Resultado* HierarquiaBase::atualizar()
 {
-	Resultado r;
-	r.acoes = getAcoes();
+	Resultado* r = new Resultado;
+	r->acoes = getAcoes();
 	return r;
+}
+
+void HierarquiaBase::setEstadoPai(HierarquiaBase * e)
+{
+	estadoPai = e;
+}
+
+HierarquiaBase *HierarquiaBase::getEstadoPai()
+{
+	return estadoPai;
 }

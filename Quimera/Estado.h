@@ -21,7 +21,8 @@ private:
 	list<Acao*> *lstSair;
 	list<Transicao*> *lstTransicoes;
 
-	list<Estado*>* lstEstados;
+protected:
+	list<HierarquiaBase*>* lstEstados;
 
 public:
 	Estado();
@@ -36,6 +37,25 @@ public:
 
 	list<Transicao*>* getTransicoes();
 
-	list<Estado*>* getEstados();
+	list<HierarquiaBase*>* getEstados();
+
+
 };
 
+list<Estado*>& operator+=(list<Estado*>& a, list<Estado*>* b)
+{
+	list<Estado*>::iterator it;
+	for (it = b->begin(); it != b->end(); it++) {
+		a.push_back(*it);
+	}
+	return a;
+}
+
+list<Acao*>& operator+=(list<Acao*>& a, list<Acao*>* b)
+{
+	list<Acao*>::iterator it;
+	for (it = b->begin(); it != b->end(); it++) {
+		a.push_back(*it);
+	}
+	return a;
+}

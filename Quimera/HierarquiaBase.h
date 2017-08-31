@@ -8,7 +8,7 @@ using namespace std;
 class Resultado {
 public:
 	list<Acao*>* acoes;
-	Transicao *transicao;
+	Transicao* transicao;
 	int nivel;
 
 	Resultado() {
@@ -19,13 +19,19 @@ public:
 };
 class HierarquiaBase
 {
+protected:
+	HierarquiaBase* estadoPai;
+
 public:
 	HierarquiaBase();
 	~HierarquiaBase();
 
 	virtual list<Acao*>* getAcoes() = 0;
-	virtual list<Estado*>* getEstados() = 0;
+	virtual list<HierarquiaBase*>* getEstados() = 0;
+	virtual list<Acao*>* atualizarPraBaixo(HierarquiaBase *e, int nivel) { return NULL; }
 
-	Resultado atualizar();
+	Resultado* atualizar();
+	void setEstadoPai(HierarquiaBase* e);
+	HierarquiaBase* getEstadoPai();
 };
 

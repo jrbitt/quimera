@@ -142,6 +142,7 @@
     <ClInclude Include="Controle.h" />
     <ClInclude Include="EntreCondicao.h" />
     <ClInclude Include="Estado.h" />
+    <ClInclude Include="EstadoSubMaquina.h" />
     <ClInclude Include="HierarquiaBase.h" />
     <ClInclude Include="MaquinaDeEstadosFinitos.h" />
     <ClInclude Include="MaquinaDeEstadosHierarquica.h" />
@@ -156,6 +157,7 @@
     <ClCompile Include="CondicaoNao.cpp" />
     <ClCompile Include="CondicaoOu.cpp" />
     <ClCompile Include="Estado.cpp" />
+    <ClCompile Include="EstadoSubMaquina.cpp" />
     <ClCompile Include="HierarquiaBase.cpp" />
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
     <ClCompile Include="MaquinaDeEstadosHierarquica.cpp" />

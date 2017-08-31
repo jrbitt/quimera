@@ -1,19 +1,20 @@
 #pragma once
 #include "HierarquiaBase.h"
-#include "Estado.h"
+#include "Controle.h"
 #include <list>
 using namespace std;
 
 class MaquinaDeEstadosHierarquica :
-	public HierarquiaBase
+	public HierarquiaBase, public Controle
 {
-private:
-	list<Estado*>* lstEstados;
+protected:
+	list<HierarquiaBase*>* lstEstados;
 	Estado* inicial;
 	Estado* atual;
 
-protected:
-	list<Acao*>* atualizar();
+	list<Acao*>* atualizar(Ambiente *a);
+	list<Acao*>* atualizarPraBaixo(HierarquiaBase *e, int nivel);
+
 
 public:
 	MaquinaDeEstadosHierarquica();
@@ -21,6 +22,6 @@ public:
 
 	void setEstadoInicial(Estado * e);
 
-	list<Estado*>* getEstados();
+	list<HierarquiaBase*>* getEstados();
 };
 

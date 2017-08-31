@@ -1,6 +1,6 @@
 #pragma once
 #include <list>
-#include "Estado.h"]
+#include "Estado.h"
 #include "Controle.h"
 
 using namespace std;
