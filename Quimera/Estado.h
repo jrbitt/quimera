@@ -1,10 +1,11 @@
 #pragma once
 #include "Acao.h"
 #include "Transicao.h"
-#include "HierarquiaBase.h"
+//#include "HierarquiaBase.h"
 #include <list>
 using namespace std;
 
+class HierarquiaBase;
 class Transicao;
 
 enum EstadoMomento {
@@ -13,7 +14,7 @@ enum EstadoMomento {
 	AO_SAIR
 };
 
-class Estado: public HierarquiaBase
+class Estado //: public HierarquiaBase
 {
 private:
 	list<Acao*> *lstAgir;
@@ -37,7 +38,7 @@ public:
 
 	list<Transicao*>* getTransicoes();
 
-	list<HierarquiaBase*>* getEstados();
+	//list<HierarquiaBase*>* getEstados();
 
 
 };
@@ -45,6 +46,15 @@ public:
 list<Estado*>& operator+=(list<Estado*>& a, list<Estado*>* b)
 {
 	list<Estado*>::iterator it;
+	for (it = b->begin(); it != b->end(); it++) {
+		a.push_back(*it);
+	}
+	return a;
+}
+
+list<HierarquiaBase*>& operator+=(list<HierarquiaBase*>& a, list<HierarquiaBase*>* b)
+{
+	list<HierarquiaBase*>::iterator it;
 	for (it = b->begin(); it != b->end(); it++) {
 		a.push_back(*it);
 	}

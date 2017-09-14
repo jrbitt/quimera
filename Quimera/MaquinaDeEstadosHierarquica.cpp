@@ -1,5 +1,6 @@
 #include "MaquinaDeEstadosHierarquica.h"
 
+/*
 MaquinaDeEstadosHierarquica::MaquinaDeEstadosHierarquica()
 {
 	atual = inicial = NULL;
@@ -37,7 +38,7 @@ list<Acao*>* MaquinaDeEstadosHierarquica::atualizarPraBaixo(HierarquiaBase * e, 
 	if (atual != NULL) {
 		(*acoes)+=atual->getAcoesAoSair();
 	}
-	atual =(Estado*) e;
+	atual =(Estado*)e;
 	(*acoes) += atual->getAcoesAoEntrar();
 	return acoes;
 }
@@ -101,3 +102,4 @@ list<Acao*>* MaquinaDeEstadosHierarquica::atualizar(Ambiente *a)
 	}
 	return r->acoes;
 }
+*/

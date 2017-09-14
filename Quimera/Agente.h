@@ -7,16 +7,24 @@ using namespace std;
 
 class Agente
 {
+private:
+	int id;
+	static int proximoId;
+
+	void setId(int i);
+
 protected:
 	Controle* controle;
 
 public:
-	Agente();
+	Agente(int i);
 	~Agente();
 
 	void setControle(Controle *c);
 	list<Acao*>* agir(Ambiente *a);
 
 	virtual void inicializar(Ambiente *a=NULL) = 0;
+
+	int getId() const;
 };
 

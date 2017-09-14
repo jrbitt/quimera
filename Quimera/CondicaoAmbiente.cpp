@@ -12,5 +12,5 @@ CondicaoAmbiente::~CondicaoAmbiente()
 
 bool CondicaoAmbiente::testar()
 {
-	return Ambiente::getInstancia()[var];
+	return Ambiente::getInstancia().getBool(var);
 }

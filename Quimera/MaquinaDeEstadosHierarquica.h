@@ -4,6 +4,7 @@
 #include <list>
 using namespace std;
 
+/*
 class MaquinaDeEstadosHierarquica :
 	public HierarquiaBase, public Controle
 {
@@ -12,16 +13,15 @@ protected:
 	Estado* inicial;
 	Estado* atual;
 
-	list<Acao*>* atualizar(Ambiente *a);
-	list<Acao*>* atualizarPraBaixo(HierarquiaBase *e, int nivel);
 
+	list<Acao*>* atualizarPraBaixo(HierarquiaBase *e, int nivel);
 
 public:
 	MaquinaDeEstadosHierarquica();
 	~MaquinaDeEstadosHierarquica();
 
 	void setEstadoInicial(Estado * e);
-
+	list<Acao*>* atualizar(Ambiente *a);
 	list<HierarquiaBase*>* getEstados();
 };
-
+*/

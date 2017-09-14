@@ -5,6 +5,7 @@
 #include <list>
 using namespace std;
 
+/*
 class Resultado {
 public:
 	list<Acao*>* acoes;
@@ -17,6 +18,7 @@ public:
 		nivel = 0;
 	}
 };
+
 class HierarquiaBase
 {
 protected:
@@ -35,3 +37,4 @@ public:
 	HierarquiaBase* getEstadoPai();
 };
 
+*/

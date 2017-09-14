@@ -1,5 +1,5 @@
 #include "HierarquiaBase.h"
-
+/*
 
 
 HierarquiaBase::HierarquiaBase()
@@ -27,3 +27,4 @@ HierarquiaBase *HierarquiaBase::getEstadoPai()
 {
 	return estadoPai;
 }
+*/

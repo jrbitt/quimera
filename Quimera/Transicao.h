@@ -4,6 +4,7 @@
 #include <list>
 using namespace std;
 
+
 class Estado;
 
 class Transicao

@@ -9,8 +9,8 @@ Estado::Estado()
 	lstSair = new list<Acao*>;
 	lstTransicoes = new list<Transicao*>;
 	lstEstados = new list<HierarquiaBase*>;
-	lstEstados->push_back(this);
-	estadoPai = NULL;
+	//lstEstados->push_back(this);
+	//estadoPai = NULL;
 }
 
 
@@ -56,8 +56,10 @@ list<Transicao*>* Estado::getTransicoes()
 	return lstTransicoes;
 }
 
+/*
 list<HierarquiaBase*>* Estado::getEstados()
 {
 	return lstEstados;
 }
+*/
 
