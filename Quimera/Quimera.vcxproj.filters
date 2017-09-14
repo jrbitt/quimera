@@ -19,6 +19,12 @@
     <Filter Include="Arquivos de Origem\Condicoes">
       <UniqueIdentifier>{fd7812a8-f859-4636-a29c-402f0559861e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Busca">
+      <UniqueIdentifier>{968ad9a2-c011-42c3-84d5-e20b45f3ec93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Busca">
+      <UniqueIdentifier>{9dc1b6ed-26bd-4515-84f1-f108010e4902}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -75,6 +81,18 @@
     <ClInclude Include="EstadoSubMaquina.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="NodoNav.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodo.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
+    <ClInclude Include="Aresta.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
+    <ClInclude Include="Grafo.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -112,6 +130,12 @@
     </ClCompile>
     <ClCompile Include="EstadoSubMaquina.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Aresta.cpp">
+      <Filter>Arquivos de Origem\Busca</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodo.cpp">
+      <Filter>Arquivos de Origem\Busca</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
