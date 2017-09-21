@@ -2,6 +2,8 @@
 #include "Acao.h"
 #include "Ambiente.h"
 #include "Controle.h"
+#include "Vetor2D.h"
+
 #include <list>
 using namespace std;
 
@@ -15,6 +17,9 @@ private:
 
 protected:
 	Controle* controle;
+	Vetor2D posicao;
+	Vetor2D escala;
+	double raio;
 
 public:
 	Agente(int i);
@@ -26,5 +31,14 @@ public:
 	virtual void inicializar(Ambiente *a=NULL) = 0;
 
 	int getId() const;
+
+	Vetor2D getPosicao()const;
+	void setPosicao(Vetor2D np);
+	double getRaio()const;
+	void setRaio(double r);
+	Vetor2D getEscala()const;
+	void setEscala(Vetor2D val);
+	void setEscala(double val);
+
 };
 

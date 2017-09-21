@@ -25,6 +25,12 @@
     <Filter Include="Arquivos de Origem\Busca">
       <UniqueIdentifier>{9dc1b6ed-26bd-4515-84f1-f108010e4902}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Matematica">
+      <UniqueIdentifier>{93cbf733-119e-4532-816d-694a4ef31a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Matemática">
+      <UniqueIdentifier>{fc09e14b-8fbd-43c5-bfa5-c86d5338044c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -93,6 +99,15 @@
     <ClInclude Include="Grafo.h">
       <Filter>Arquivos de Cabeçalho\Busca</Filter>
     </ClInclude>
+    <ClInclude Include="Vetor2D.h">
+      <Filter>Arquivos de Cabeçalho\Matematica</Filter>
+    </ClInclude>
+    <ClInclude Include="AgenteMovel.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Matriz3x3.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -136,6 +151,15 @@
     </ClCompile>
     <ClCompile Include="Nodo.cpp">
       <Filter>Arquivos de Origem\Busca</Filter>
+    </ClCompile>
+    <ClCompile Include="Vetor2D.cpp">
+      <Filter>Arquivos de Origem\Matemática</Filter>
+    </ClCompile>
+    <ClCompile Include="AgenteMovel.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Matriz3x3.cpp">
+      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

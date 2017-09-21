@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="Acao.h" />
     <ClInclude Include="Agente.h" />
+    <ClInclude Include="AgenteMovel.h" />
     <ClInclude Include="Ambiente.h" />
     <ClInclude Include="Aresta.h" />
     <ClInclude Include="Condicao.h" />
@@ -148,13 +149,16 @@
     <ClInclude Include="HierarquiaBase.h" />
     <ClInclude Include="MaquinaDeEstadosFinitos.h" />
     <ClInclude Include="MaquinaDeEstadosHierarquica.h" />
+    <ClInclude Include="Matriz3x3.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="NodoNav.h" />
     <ClInclude Include="Quimera.h" />
     <ClInclude Include="Transicao.h" />
+    <ClInclude Include="Vetor2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Agente.cpp" />
+    <ClCompile Include="AgenteMovel.cpp" />
     <ClCompile Include="Ambiente.cpp" />
     <ClCompile Include="Aresta.cpp" />
     <ClCompile Include="CondicaoAmbiente.cpp" />
@@ -166,8 +170,10 @@
     <ClCompile Include="HierarquiaBase.cpp" />
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
     <ClCompile Include="MaquinaDeEstadosHierarquica.cpp" />
+    <ClCompile Include="Matriz3x3.cpp" />
     <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="Transicao.cpp" />
+    <ClCompile Include="Vetor2D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
