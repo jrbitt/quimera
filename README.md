@@ -10,6 +10,7 @@ As implementações são baseadas nos livros:
 * Máquina de Estados Finitos
 * Máquina de Estados Finitos Hierárquica (em progresso)
 * Grafos (em progresso)
+* Steering (em progresso)
 
 ## Roadmap
 * Lógica Difusa

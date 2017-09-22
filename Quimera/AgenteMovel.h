@@ -1,6 +1,7 @@
 #pragma once
 #include "Agente.h"
-#include "Vetor2D.h"
+#include "GerenteDeSteering.h"
+class GerenteDeSteering;
 
 class AgenteMovel :
 	public Agente
@@ -15,6 +16,8 @@ protected:
 	double forcaMax;
 	double rotacaoMax; //radianos/segundos
 
+	GerenteDeSteering* gSteering;
+
 public:
 	AgenteMovel(Vetor2D posicao,
 		double    raio,
@@ -26,6 +29,8 @@ public:
 		double    rotacao,
 		double    forcaMaxima);
 	~AgenteMovel();
+
+	void atualizar(double te);
 
 	Vetor2D getVelocidade()const;
 	void setVelocidade(const Vetor2D& v);
@@ -45,5 +50,8 @@ public:
 	bool rotacionarEmDirecaoPosicao(Vetor2D alvo);
 	double getRotacaoMaxima()const;
 	void setRotacacoMaxima(double val);
+
+	void setGerenteDeSteering(GerenteDeSteering *s);
+	GerenteDeSteering* getGerenteDeSteering() const;
 };
 

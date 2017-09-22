@@ -26,6 +26,23 @@ AgenteMovel::~AgenteMovel()
 {
 }
 
+void AgenteMovel::atualizar(double te)
+{
+	Vetor2D sForca = gSteering->calcular();
+	Vetor2D aceleracao = sForca / massa;
+
+	velocidade += aceleracao*te;
+	velocidade.truncar(velMax);
+
+	posicao += velocidade*te;
+	if (velocidade.tamanhoQuadrado() > 0.000000001) {
+		Vetor2D v(velocidade);
+		v.normalizar();
+		direcao = v;
+		lado = direcao.perpendicular();
+	}
+}
+
 Vetor2D AgenteMovel::getVelocidade() const
 {
 	return velocidade;
@@ -118,4 +135,14 @@ double AgenteMovel::getRotacaoMaxima() const
 void AgenteMovel::setRotacacoMaxima(double val)
 {
 	rotacaoMax = val;
+}
+
+void AgenteMovel::setGerenteDeSteering(GerenteDeSteering * s)
+{
+	gSteering = s;
+}
+
+GerenteDeSteering * AgenteMovel::getGerenteDeSteering() const
+{
+	return gSteering;
 }

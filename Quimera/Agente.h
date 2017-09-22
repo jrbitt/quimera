@@ -29,6 +29,7 @@ public:
 	list<Acao*>* agir(Ambiente *a);
 
 	virtual void inicializar(Ambiente *a=NULL) = 0;
+	virtual void atualizar(double te) = 0;
 
 	int getId() const;
 
@@ -39,6 +40,7 @@ public:
 	Vetor2D getEscala()const;
 	void setEscala(Vetor2D val);
 	void setEscala(double val);
+
 
 };
 

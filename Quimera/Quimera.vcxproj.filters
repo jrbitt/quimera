@@ -31,6 +31,9 @@
     <Filter Include="Arquivos de Origem\Matemática">
       <UniqueIdentifier>{fc09e14b-8fbd-43c5-bfa5-c86d5338044c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Steering">
+      <UniqueIdentifier>{5bf53d68-6d1a-49ae-9b65-24b13ddd8099}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -108,6 +111,15 @@
     <ClInclude Include="Matriz3x3.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="Steering.h">
+      <Filter>Arquivos de Cabeçalho\Steering</Filter>
+    </ClInclude>
+    <ClInclude Include="GerenteDeSteering.h">
+      <Filter>Arquivos de Cabeçalho\Steering</Filter>
+    </ClInclude>
+    <ClInclude Include="Seek.h">
+      <Filter>Arquivos de Cabeçalho\Steering</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -159,7 +171,21 @@
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Matriz3x3.cpp">
+      <Filter>Arquivos de Origem\Matemática</Filter>
+    </ClCompile>
+    <ClCompile Include="Steering.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="GerenteDeSteering.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Seek.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Quimera.rc">
+      <Filter>Arquivos de Recurso</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
