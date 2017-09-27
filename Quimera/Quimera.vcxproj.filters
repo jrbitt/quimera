@@ -90,9 +90,6 @@
     <ClInclude Include="EstadoSubMaquina.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="NodoNav.h">
-      <Filter>Arquivos de Cabeçalho\Busca</Filter>
-    </ClInclude>
     <ClInclude Include="Nodo.h">
       <Filter>Arquivos de Cabeçalho\Busca</Filter>
     </ClInclude>
@@ -120,12 +117,18 @@
     <ClInclude Include="Seek.h">
       <Filter>Arquivos de Cabeçalho\Steering</Filter>
     </ClInclude>
+    <ClInclude Include="Problema.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
+    <ClInclude Include="Comando.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
+    <ClInclude Include="Solucao.h">
+      <Filter>Arquivos de Cabeçalho\Busca</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Transicao.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp">
@@ -161,9 +164,6 @@
     <ClCompile Include="Aresta.cpp">
       <Filter>Arquivos de Origem\Busca</Filter>
     </ClCompile>
-    <ClCompile Include="Nodo.cpp">
-      <Filter>Arquivos de Origem\Busca</Filter>
-    </ClCompile>
     <ClCompile Include="Vetor2D.cpp">
       <Filter>Arquivos de Origem\Matemática</Filter>
     </ClCompile>
@@ -181,6 +181,12 @@
     </ClCompile>
     <ClCompile Include="Seek.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Transicao.cpp">
+      <Filter>Arquivos de Origem\Busca</Filter>
+    </ClCompile>
+    <ClCompile Include="Solucao.cpp">
+      <Filter>Arquivos de Origem\Busca</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
