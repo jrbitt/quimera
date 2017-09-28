@@ -34,6 +34,12 @@
     <Filter Include="Arquivos de Cabeçalho\Steering">
       <UniqueIdentifier>{5bf53d68-6d1a-49ae-9b65-24b13ddd8099}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\Dados">
+      <UniqueIdentifier>{1d2aed61-cba5-4c01-a587-51098fd06bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Dados">
+      <UniqueIdentifier>{6144805f-3a0d-43c4-83a7-41699a6a9bf3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -126,6 +132,15 @@
     <ClInclude Include="Solucao.h">
       <Filter>Arquivos de Cabeçalho\Busca</Filter>
     </ClInclude>
+    <ClInclude Include="Atributo.h">
+      <Filter>Arquivos de Cabeçalho\Dados</Filter>
+    </ClInclude>
+    <ClInclude Include="Exemplo.h">
+      <Filter>Arquivos de Cabeçalho\Dados</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDeExemplos.h">
+      <Filter>Arquivos de Cabeçalho\Dados</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -187,6 +202,12 @@
     </ClCompile>
     <ClCompile Include="Solucao.cpp">
       <Filter>Arquivos de Origem\Busca</Filter>
+    </ClCompile>
+    <ClCompile Include="Exemplo.cpp">
+      <Filter>Arquivos de Origem\Dados</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDeExemplos.cpp">
+      <Filter>Arquivos de Origem\Dados</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

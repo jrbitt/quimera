@@ -136,6 +136,8 @@
     <ClInclude Include="AgenteMovel.h" />
     <ClInclude Include="Ambiente.h" />
     <ClInclude Include="Aresta.h" />
+    <ClInclude Include="Atributo.h" />
+    <ClInclude Include="BaseDeExemplos.h" />
     <ClInclude Include="Comando.h" />
     <ClInclude Include="Condicao.h" />
     <ClInclude Include="CondicaoAmbiente.h" />
@@ -146,6 +148,7 @@
     <ClInclude Include="EntreCondicao.h" />
     <ClInclude Include="Estado.h" />
     <ClInclude Include="EstadoSubMaquina.h" />
+    <ClInclude Include="Exemplo.h" />
     <ClInclude Include="GerenteDeSteering.h" />
     <ClInclude Include="Grafo.h" />
     <ClInclude Include="HierarquiaBase.h" />
@@ -166,12 +169,14 @@
     <ClCompile Include="AgenteMovel.cpp" />
     <ClCompile Include="Ambiente.cpp" />
     <ClCompile Include="Aresta.cpp" />
+    <ClCompile Include="BaseDeExemplos.cpp" />
     <ClCompile Include="CondicaoAmbiente.cpp" />
     <ClCompile Include="CondicaoE.cpp" />
     <ClCompile Include="CondicaoNao.cpp" />
     <ClCompile Include="CondicaoOu.cpp" />
     <ClCompile Include="Estado.cpp" />
     <ClCompile Include="EstadoSubMaquina.cpp" />
+    <ClCompile Include="Exemplo.cpp" />
     <ClCompile Include="GerenteDeSteering.cpp" />
     <ClCompile Include="HierarquiaBase.cpp" />
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
