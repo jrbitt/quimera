@@ -8,9 +8,11 @@ As implementações são baseadas nos livros:
 
 ## Algoritmos implementados
 * Máquina de Estados Finitos
-* Máquina de Estados Finitos Hierárquica (em progresso)
-* Grafos (em progresso)
-* Steering (em progresso)
+
+## Algoritmos em progresso
+* Máquina de Estados Finitos Hierárquica
+* Grafos
+* Steering
 * Árvores de Decisão (ID3)
 
 ## Roadmap
