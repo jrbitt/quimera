@@ -4,13 +4,14 @@ O objetivo é utilizado no ensino de técnicas de Inteligência Artificial nos c
 As implementações são baseadas nos livros:
 
 * *Ian Millington e John Funge - Artificial Intelligence for Games*.
-* *Mat Buckland - Programming Game AI by Example*
+* *Mat Buckland - Programming Game AI by Examples*
 
 ## Algoritmos implementados
 * Máquina de Estados Finitos
 * Máquina de Estados Finitos Hierárquica (em progresso)
 * Grafos (em progresso)
 * Steering (em progresso)
+* Árvores de Decisão (ID3)
 
 ## Roadmap
 * Lógica Difusa

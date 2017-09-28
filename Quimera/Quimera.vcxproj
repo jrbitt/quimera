@@ -152,6 +152,7 @@
     <ClInclude Include="GerenteDeSteering.h" />
     <ClInclude Include="Grafo.h" />
     <ClInclude Include="HierarquiaBase.h" />
+    <ClInclude Include="ID3.h" />
     <ClInclude Include="MaquinaDeEstadosFinitos.h" />
     <ClInclude Include="MaquinaDeEstadosHierarquica.h" />
     <ClInclude Include="Matriz3x3.h" />
@@ -179,6 +180,7 @@
     <ClCompile Include="Exemplo.cpp" />
     <ClCompile Include="GerenteDeSteering.cpp" />
     <ClCompile Include="HierarquiaBase.cpp" />
+    <ClCompile Include="ID3.cpp" />
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
     <ClCompile Include="MaquinaDeEstadosHierarquica.cpp" />
     <ClCompile Include="Matriz3x3.cpp" />

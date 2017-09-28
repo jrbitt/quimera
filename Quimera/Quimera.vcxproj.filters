@@ -40,6 +40,12 @@
     <Filter Include="Arquivos de Cabeçalho\Dados">
       <UniqueIdentifier>{6144805f-3a0d-43c4-83a7-41699a6a9bf3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\AprendizadoDeMaquinas">
+      <UniqueIdentifier>{ddf7c477-2fba-40e8-b134-7f6e3583d6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\AprendizadoDeMaquinas">
+      <UniqueIdentifier>{6243cdf6-53c4-47e1-bf9e-5c2ba1e6aefd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -141,6 +147,9 @@
     <ClInclude Include="BaseDeExemplos.h">
       <Filter>Arquivos de Cabeçalho\Dados</Filter>
     </ClInclude>
+    <ClInclude Include="ID3.h">
+      <Filter>Arquivos de Cabeçalho\AprendizadoDeMaquinas</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -208,6 +217,9 @@
     </ClCompile>
     <ClCompile Include="BaseDeExemplos.cpp">
       <Filter>Arquivos de Origem\Dados</Filter>
+    </ClCompile>
+    <ClCompile Include="ID3.cpp">
+      <Filter>Arquivos de Origem\AprendizadoDeMaquinas</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
