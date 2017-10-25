@@ -1,4 +1,7 @@
 #pragma once
+#include <vector>
+using namespace std;
+
 class QArmazenaValor
 {
 
@@ -12,6 +15,6 @@ public:
 
 	void armazenaValorQ(int estado, int acao, float q);
 	float getValorQ(int estado, int acao);
-	int getMelhorAcao(int estado, int *acoes, int numAcoes);
+	int getMelhorAcao(int estado, vector<int>* acoes);
 };
 

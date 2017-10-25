@@ -28,13 +28,13 @@ float QArmazenaValor::getValorQ(int estado, int acao)
 	return matriz[estado][acao];
 }
 
-int QArmazenaValor::getMelhorAcao(int estado, int * acoes, int numAcoes)
+int QArmazenaValor::getMelhorAcao(int estado, vector<int>* acoes)
 {
 	int melhori = 0;
 	float melhorq = -1.0f;
-	for (int i = 0; i<numAcoes; i++) {
-		if (matriz[estado][acoes[i]]>melhorq) {
-			melhorq = matriz[estado][acoes[i]];
+	for (int i = 0; i<acoes->size(); i++) {
+		if (matriz[estado][(*acoes)[i]]>melhorq) {
+			melhorq = matriz[estado][(*acoes)[i]];
 			melhori = i;
 		}
 	}

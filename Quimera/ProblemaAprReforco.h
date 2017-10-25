@@ -1,4 +1,7 @@
 #pragma once
+#include <vector>
+using namespace std;
+
 class ProblemaAprReforco
 {
 
@@ -9,11 +12,9 @@ public:
 		int novoEstado;
 	};
 
-	ProblemaAprReforco();
-	~ProblemaAprReforco();
 
 	virtual int getEstadoRandomico() = 0;
-	virtual int* getAcoes(int estado) = 0;
+	virtual vector<int>* getAcoes(int estado) = 0;
 	virtual ParProblema tomarAcao(int estado, int acao) = 0;
 
 	virtual int getNumEstados() = 0;

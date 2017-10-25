@@ -1,6 +1,8 @@
 #pragma once
+#include <vector>
 #include "ProblemaAprReforco.h"
 #include "QArmazenaValor.h"
+using namespace std;
 
 class QLearning
 {
@@ -11,7 +13,7 @@ private:
 	int iteracoes;
 	float alpha, gamma, rho, nu;
 
-	int randomUm(int* acoes, int numAcoes);
+	int randomUm(vector<int>* acoes);
 	float random();
 
 public:

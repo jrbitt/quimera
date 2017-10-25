@@ -12,9 +12,9 @@ QLearning::QLearning(ProblemaAprReforco *p)
 }
 
 
-int QLearning::randomUm(int * acoes, int numAcoes)
+int QLearning::randomUm(vector<int>* acoes)
 {
-	return acoes[rand() % numAcoes];
+	return (*acoes)[rand() % acoes->size()];
 }
 
 float QLearning::random()
@@ -34,19 +34,19 @@ void QLearning::aprender()
 			estado = problema->getEstadoRandomico();
 		}
 
-		int *acoes = problema->getAcoes(estado);
+		vector<int>* acoes = problema->getAcoes(estado);
 		int numAcoes = problema->getNumMaxAcoes();
 		int acao = -1;
 		if (random()<rho) {
-			acao = randomUm(acoes,numAcoes);
+			acao = randomUm(acoes);
 		}
 		else {
-			acao = acoes[armazem->getMelhorAcao(estado, acoes, numAcoes)];
+			acao = (*acoes)[armazem->getMelhorAcao(estado, acoes)];
 		}
 
 		ProblemaAprReforco::ParProblema par = problema->tomarAcao(estado, acao);
 		float q = armazem->getValorQ(estado, acao);
-		float maxQ = armazem->getValorQ(par.novoEstado,armazem->getMelhorAcao(estado, acoes, numAcoes));
+		float maxQ = armazem->getValorQ(par.novoEstado,armazem->getMelhorAcao(estado, acoes));
 		q = (1 - alpha)*q + alpha*(par.recompensa+ gamma*maxQ);
 		armazem->armazenaValorQ(estado, acao, q);
 		estado = par.novoEstado;
