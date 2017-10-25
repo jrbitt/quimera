@@ -16,7 +16,7 @@ protected:
 	int profundidade = 0;			//Profundidade
 	float custo;			//Custo
 
-	list<Node<V>> filhos;
+	list<Nodo<V>> filhos;
 
 public:
 	Nodo()
@@ -64,9 +64,9 @@ public:
 		return filhos.size();
 	}
 
-	list<Node<V>>::iterator elementos() {
-		return children.iterator();
-	}
+//	//list<Nodo<V>>::iterator elementos() {
+//		return children.iterator();
+	//}
 
 	void adicionar(Nodo<V> nn, Comando *cmd) {
 		nn.setComando(cmd);

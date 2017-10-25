@@ -46,6 +46,12 @@
     <Filter Include="Arquivos de Origem\AprendizadoDeMaquinas">
       <UniqueIdentifier>{6243cdf6-53c4-47e1-bf9e-5c2ba1e6aefd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\AR">
+      <UniqueIdentifier>{31ffff8f-beaa-4977-ab86-07e1d805a3f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\AR">
+      <UniqueIdentifier>{036fffcb-59c3-45d0-b6e4-9acc46f97d72}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -150,6 +156,15 @@
     <ClInclude Include="ID3.h">
       <Filter>Arquivos de Cabeçalho\AprendizadoDeMaquinas</Filter>
     </ClInclude>
+    <ClInclude Include="ProblemaAprReforco.h">
+      <Filter>Arquivos de Cabeçalho\AR</Filter>
+    </ClInclude>
+    <ClInclude Include="QArmazenaValor.h">
+      <Filter>Arquivos de Cabeçalho\AR</Filter>
+    </ClInclude>
+    <ClInclude Include="QLearning.h">
+      <Filter>Arquivos de Cabeçalho\AR</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -220,6 +235,12 @@
     </ClCompile>
     <ClCompile Include="ID3.cpp">
       <Filter>Arquivos de Origem\AprendizadoDeMaquinas</Filter>
+    </ClCompile>
+    <ClCompile Include="QArmazenaValor.cpp">
+      <Filter>Arquivos de Origem\AR</Filter>
+    </ClCompile>
+    <ClCompile Include="QLearning.cpp">
+      <Filter>Arquivos de Origem\AR</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

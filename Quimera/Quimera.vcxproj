@@ -158,6 +158,9 @@
     <ClInclude Include="Matriz3x3.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="Problema.h" />
+    <ClInclude Include="ProblemaAprReforco.h" />
+    <ClInclude Include="QArmazenaValor.h" />
+    <ClInclude Include="QLearning.h" />
     <ClInclude Include="Quimera.h" />
     <ClInclude Include="Seek.h" />
     <ClInclude Include="Solucao.h" />
@@ -184,6 +187,8 @@
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
     <ClCompile Include="MaquinaDeEstadosHierarquica.cpp" />
     <ClCompile Include="Matriz3x3.cpp" />
+    <ClCompile Include="QArmazenaValor.cpp" />
+    <ClCompile Include="QLearning.cpp" />
     <ClCompile Include="Seek.cpp" />
     <ClCompile Include="Solucao.cpp" />
     <ClCompile Include="Steering.cpp" />

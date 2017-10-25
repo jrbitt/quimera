@@ -1,6 +1,6 @@
 #include "ID3.h"
 
-
+/*
 
 ID3::ID3()
 {
@@ -28,6 +28,7 @@ Nodo<NodoID3*>* ID3::getArvore()
 {
 	return arvore;
 }
+
 
 void ID3::criarArvore(BaseDeExemplos *examples, int * attrs, Nodo<NodoID3*> *node)
 {
@@ -101,6 +102,7 @@ void ID3::criarArvore(BaseDeExemplos *examples, int * attrs, Nodo<NodoID3*> *nod
 			createTree(new ExamplesSet(set), newAttr, daugther);
 		}
 	}
+	
 }
 
 //remove um atributo da lista de atributos
@@ -227,3 +229,4 @@ void ID3::contaAcoes(map<string, int>* actions, BaseDeExemplos *examples)
 NodoID3::NodoID3()
 {
 }
+*/
