@@ -21,5 +21,6 @@ public:
 	virtual int getNumMaxAcoes() = 0;
 
 	virtual bool acabou() = 0;
+
 };
 

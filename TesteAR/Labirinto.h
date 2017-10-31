@@ -17,11 +17,14 @@ class Labirinto: public ProblemaAprReforco
 private:
 	int inicio, fim;
 	bool terminou;
+	int atual;
 
 public:
-	Labirinto(int i, int f);
+	Labirinto(int f);
+	Labirinto();
 	~Labirinto();
 
+	void setPosicoes(int i, int f);
 	int getEstadoRandomico();
 	vector<int>* getAcoes(int estado);
 	ProblemaAprReforco::ParProblema tomarAcao(int estado, int acao);
@@ -30,5 +33,9 @@ public:
 	int getNumMaxAcoes();
 
 	bool acabou();
+
+	int getAtual();
+	void setAtual(int a);
+	void mover(Direcoes d);
 };
 

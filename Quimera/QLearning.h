@@ -21,6 +21,7 @@ public:
 	~QLearning();
 
 	void aprender();
+	int agir(int estado);
 
 	int getIteracoes();
 

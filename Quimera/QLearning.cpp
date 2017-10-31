@@ -1,5 +1,5 @@
 #include "QLearning.h"
-
+#include <time.h>
 
 #include <cstdlib>
 
@@ -9,6 +9,7 @@ QLearning::QLearning(ProblemaAprReforco *p)
 	problema = p;
 	iteracoes = 0;
 	alpha = gamma = rho = nu = 0.0f;
+	srand(time(NULL));
 }
 
 
@@ -35,7 +36,6 @@ void QLearning::aprender()
 		}
 
 		vector<int>* acoes = problema->getAcoes(estado);
-		int numAcoes = problema->getNumMaxAcoes();
 		int acao = -1;
 		if (random()<rho) {
 			acao = randomUm(acoes);
@@ -50,10 +50,16 @@ void QLearning::aprender()
 		q = (1 - alpha)*q + alpha*(par.recompensa+ gamma*maxQ);
 		armazem->armazenaValorQ(estado, acao, q);
 		estado = par.novoEstado;
-		if (problema->acabou()) {
-			break;
-		}
+		//if (problema->acabou()) {
+			//break;
+		//}
 	}
+}
+
+int QLearning::agir(int estado)
+{
+	vector<int>* acoes = problema->getAcoes(estado);
+	return armazem->getAcao(estado,acoes);
 }
 
 int QLearning::getIteracoes()

@@ -16,5 +16,7 @@ public:
 	void armazenaValorQ(int estado, int acao, float q);
 	float getValorQ(int estado, int acao);
 	int getMelhorAcao(int estado, vector<int>* acoes);
+	int getAcao(int estado, vector<int>* acoes);
+
 };
 

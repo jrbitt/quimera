@@ -3,10 +3,20 @@
 #include <iostream>
 using namespace std;
 
-Labirinto::Labirinto(int i, int f)
+Labirinto::Labirinto(int f)
 {
-	inicio = i;
+	inicio = -1;
 	fim = f;
+	atual = -1;
+	terminou = false;
+}
+
+Labirinto::Labirinto()
+{
+	inicio = -1;
+	fim = -1;
+	atual = -1;
+	terminou = false;
 }
 
 
@@ -14,9 +24,15 @@ Labirinto::~Labirinto()
 {
 }
 
+void Labirinto::setPosicoes(int i, int f)
+{
+	inicio = atual = i;
+	fim = f;
+}
+
 int Labirinto::getEstadoRandomico()
 {
-	return inicio;
+	return rand() % 9;
 }
 
 //0 3 2
@@ -37,23 +53,27 @@ vector<int>* Labirinto::getAcoes(int estado)
 		v->push_back(2);
 		v->push_back(3);
 	}
+	break;
 	case 1:
 	{
 		v->push_back(0);
 		v->push_back(2);
 		v->push_back(3);
 	}
+	break;
 	case 2:
 	{
-		v->push_back(2);
+		v->push_back(0);
 		v->push_back(3);
 	}
+	break;
 	case 3: 
 	{
 		v->push_back(1);
 		v->push_back(2);
 		v->push_back(3);
 	}
+	break;
 	case 4:
 	{
 		v->push_back(0);
@@ -61,28 +81,33 @@ vector<int>* Labirinto::getAcoes(int estado)
 		v->push_back(2);
 		v->push_back(3);
 	}
+	break;
 	case 5: 
 	{
 		v->push_back(0);
 		v->push_back(1);
 		v->push_back(3);
 	}
+	break;
 	case 6: 
 	{
 		v->push_back(1);
 		v->push_back(2);
 	}
+	break;
 	case 7:
 	{
 		v->push_back(0);
 		v->push_back(1);
 		v->push_back(2);
 	}
+	break;
 	case 8:
 	{
 		v->push_back(0);
 		v->push_back(1);
 	}
+	break;
 	}
 	return v;
 }
@@ -160,4 +185,30 @@ int Labirinto::getNumMaxAcoes()
 bool Labirinto::acabou()
 {
 	return terminou;
+}
+
+int Labirinto::getAtual()
+{
+ 	return atual;
+}
+
+void Labirinto::setAtual(int a)
+{
+	atual = a;
+}
+
+void Labirinto::mover(Direcoes d)
+{
+	switch (d) {
+	case DIR: atual += 1;
+		break;
+	case ESQ: atual -= 1;
+		break;
+	case CIMA:
+		atual -= 3;
+		break;
+	case BAIXO:
+		atual += 3;
+		break;
+	}
 }
