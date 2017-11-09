@@ -8,6 +8,7 @@ As implementações são baseadas nos livros:
 
 ## Algoritmos implementados
 * Máquina de Estados Finitos
+* Aprendizado por reforço (Q-Learning)
 
 ## Algoritmos em progresso
 * Máquina de Estados Finitos Hierárquica
@@ -18,3 +19,5 @@ As implementações são baseadas nos livros:
 ## Roadmap
 * Lógica Difusa
 * Máquina de Estados Difusa
+* Algoritmos Genéticos
+* Redes Neurais
