@@ -13,8 +13,6 @@ int main()
 	Labirinto lab(8);
 	QLearning ql(&lab);
 
-	ql.carregar("lab.txt");
-
 	ql.setAlpha(0.2f);
 	ql.setGamma(0.8f);
 	ql.setIteracoes(1000);
