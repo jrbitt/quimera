@@ -20,6 +20,8 @@ public:
 	MLP(int e, int h, int s);
 	~MLP();
 
-	void aprenderPadrao(float* entrada, float * saida); 
+	float aprenderPadrao(float* entrada, float * saida);
+	void setTaxaAprendizagem(float ganho);
+	float getErroMedio(float * saida);
 };
 

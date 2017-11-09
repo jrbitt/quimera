@@ -4,6 +4,7 @@ using namespace std;
 
 class Perceptron
 {
+public:
 	class Entrada{
 	public:
 		Perceptron* perceptronEntrada;
@@ -39,5 +40,7 @@ public:
 
 	void limpar();
 	void inicializar();
+
+	float derivada();
 };
 

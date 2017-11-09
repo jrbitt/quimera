@@ -10,7 +10,9 @@ float Perceptron::threshold(float i)
 Perceptron::Perceptron()
 {
 	erro = 0;
-	alfa = 10;
+	alfa = 6;
+	estado = 0;
+	ganho = 0;
 }
 
 
@@ -64,7 +66,7 @@ void Perceptron::ajustarPesos(float erroAtual)
 	vector<Perceptron::Entrada*>::iterator it;
 	for (it = entradas.begin(); it != entradas.end(); it++) {
 		Perceptron::Entrada* entrada = (*it);
-		float delta = (ganho*erroAtual*entrada->perceptronEntrada->getEstado());
+		float delta = (ganho*erroAtual*entrada->perceptronEntrada->derivada());
 		entrada->peso += delta;
 	}
 	erro = erroAtual;
@@ -93,4 +95,9 @@ void Perceptron::inicializar()
 	for (it = entradas.begin(); it != entradas.end(); it++) {
 		(*it)->peso = ((float)rand() / (RAND_MAX));
 	}
+}
+
+float Perceptron::derivada()
+{
+	return estado*(1 - estado);
 }

@@ -7,16 +7,25 @@ MLP::MLP(int e, int h, int s)
 	srand(time(NULL));
 	for (int i = 0; i < e; i++) {
 		Perceptron* p = new Perceptron();
-		p->inicializar();
 		entradas.push_back(p);
 	}
 	for (int i = 0; i < h; i++) {
 		Perceptron* p = new Perceptron();
+		for (int j = 0; j < e;j++) {
+			Perceptron::Entrada *e = new Perceptron::Entrada;
+			e->perceptronEntrada = entradas[j];
+			p->addEntrada(e);
+		}
 		p->inicializar();
 		camadaOculta.push_back(p);
 	}
 	for (int i = 0; i < s; i++) {
 		Perceptron* p = new Perceptron();
+		for (int j = 0; j < h; j++) {
+			Perceptron::Entrada *e = new Perceptron::Entrada;
+			e->perceptronEntrada = camadaOculta[j];
+			p->addEntrada(e);
+		}
 		p->inicializar();
 		saidas.push_back(p);
 	}
@@ -30,10 +39,33 @@ MLP::~MLP()
 {
 }
 
-void MLP::aprenderPadrao(float * entrada, float * saida)
+float MLP::aprenderPadrao(float * entrada, float * saida)
 {
 	gerarSaida(entrada);
 	backprop(saida);
+	return getErroMedio(saida);
+}
+
+void MLP::setTaxaAprendizagem(float ganho)
+{
+	for (int i = 0; i < numEntradas; i++) {
+		entradas[i]->setGanho(ganho);
+	}
+	for (int i = 0; i < numOcultas; i++) {
+		camadaOculta[i]->setGanho(ganho);
+	}
+	for (int i = 0; i < numSaidas; i++) {
+		saidas[i]->setGanho(ganho);
+	}
+}
+
+float MLP::getErroMedio(float * saida)
+{
+	float erro = 0.0;
+	for (int i = 0; i < numSaidas; i++) {
+		erro += abs(saidas[i]->getEstado() - saida[i]);
+	}
+	return erro / numSaidas;
 }
 
 void MLP::gerarSaida(float * entrada)
@@ -59,7 +91,7 @@ void MLP::backprop(float * saida)
 	for (it = saidas.begin(); it != saidas.end(); it++) {
 		Perceptron *perceptron = (*it);
 		float estado = perceptron->getEstado();
-		float erro = estado*(1 - estado)*(saida[i++] - estado);
+		float erro = (saida[i++] - estado);
 		perceptron->ajustarPesos(erro);
 	}
 	for (it = camadaOculta.begin(); it != camadaOculta.end(); it++) {
@@ -68,9 +100,9 @@ void MLP::backprop(float * saida)
 		
 		float soma = 0;
 		for (int j = 0; j < numSaidas; j++) {
-			soma = saidas[i]->getPesoEntrada(perceptron)*saidas[i]->getErro();
+			soma = saidas[j]->getPesoEntrada(perceptron)*saidas[j]->getErro();
 		}
-		float erro = estado*(1 - estado)*soma;
-		perceptron->ajustarPesos(erro);
+		//float erro = estado*(1 - estado)*soma;
+		perceptron->ajustarPesos(soma);
 	}
 }

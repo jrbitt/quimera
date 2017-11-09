@@ -12,6 +12,7 @@ As implementações são baseadas nos livros:
 
 ## Algoritmos em progresso
 * Máquina de Estados Finitos Hierárquica
+* Redes Neurais Artificiais (MLP)
 * Grafos
 * Steering
 * Árvores de Decisão (ID3)
@@ -20,4 +21,3 @@ As implementações são baseadas nos livros:
 * Lógica Difusa
 * Máquina de Estados Difusa
 * Algoritmos Genéticos
-* Redes Neurais
