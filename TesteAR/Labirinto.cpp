@@ -167,7 +167,7 @@ ProblemaAprReforco::ParProblema Labirinto::tomarAcao(int estado, int acao)
 		cout << "cheguei" << endl;
 	}
 	else {
-		pp.recompensa = -1;
+		pp.recompensa = 0;
 	}
 	return pp;
 }

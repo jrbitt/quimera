@@ -7,6 +7,8 @@ class QArmazenaValor
 
 private:
 	float **matriz;
+	int estados;
+	int acoes;
 
 public:
 	QArmazenaValor(int e, int a);
@@ -18,5 +20,6 @@ public:
 	int getMelhorAcao(int estado, vector<int>* acoes);
 	int getAcao(int estado, vector<int>* acoes);
 
+	void salvar(string nomeArquivo);
 };
 

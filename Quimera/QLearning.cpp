@@ -111,3 +111,8 @@ void QLearning::setNu(float nu)
 {
 	this->nu = nu;
 }
+
+void QLearning::salvar(string nomeArquivo)
+{
+	armazem->salvar(nomeArquivo);
+}

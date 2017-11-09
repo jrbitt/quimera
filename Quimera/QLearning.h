@@ -6,7 +6,7 @@ using namespace std;
 
 class QLearning
 {
-private:
+private:	
 	QArmazenaValor *armazem;
 	ProblemaAprReforco *problema;
 	
@@ -42,5 +42,7 @@ public:
 	float getNu();
 
 	void setNu(float nu);
+
+	void salvar(string nomeArquivo);
 };
 
