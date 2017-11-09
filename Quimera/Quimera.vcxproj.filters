@@ -52,6 +52,12 @@
     <Filter Include="Arquivos de Cabeçalho\AR">
       <UniqueIdentifier>{036fffcb-59c3-45d0-b6e4-9acc46f97d72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\RNA">
+      <UniqueIdentifier>{f83df1ee-5da3-4bc5-9894-5233bd74b19c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\RNA">
+      <UniqueIdentifier>{92cbd3d6-f9a3-45b3-9651-8b1c7ab443e0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -165,6 +171,12 @@
     <ClInclude Include="QLearning.h">
       <Filter>Arquivos de Cabeçalho\AR</Filter>
     </ClInclude>
+    <ClInclude Include="Perceptron.h">
+      <Filter>Arquivos de Cabeçalho\RNA</Filter>
+    </ClInclude>
+    <ClInclude Include="MLP.h">
+      <Filter>Arquivos de Cabeçalho\RNA</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Estado.cpp">
@@ -241,6 +253,12 @@
     </ClCompile>
     <ClCompile Include="QLearning.cpp">
       <Filter>Arquivos de Origem\AR</Filter>
+    </ClCompile>
+    <ClCompile Include="MLP.cpp">
+      <Filter>Arquivos de Origem\RNA</Filter>
+    </ClCompile>
+    <ClCompile Include="Perceptron.cpp">
+      <Filter>Arquivos de Origem\RNA</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

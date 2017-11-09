@@ -156,7 +156,9 @@
     <ClInclude Include="MaquinaDeEstadosFinitos.h" />
     <ClInclude Include="MaquinaDeEstadosHierarquica.h" />
     <ClInclude Include="Matriz3x3.h" />
+    <ClInclude Include="MLP.h" />
     <ClInclude Include="Nodo.h" />
+    <ClInclude Include="Perceptron.h" />
     <ClInclude Include="Problema.h" />
     <ClInclude Include="ProblemaAprReforco.h" />
     <ClInclude Include="QArmazenaValor.h" />
@@ -187,6 +189,8 @@
     <ClCompile Include="MaquinaDeEstadosFinitos.cpp" />
     <ClCompile Include="MaquinaDeEstadosHierarquica.cpp" />
     <ClCompile Include="Matriz3x3.cpp" />
+    <ClCompile Include="MLP.cpp" />
+    <ClCompile Include="Perceptron.cpp" />
     <ClCompile Include="QArmazenaValor.cpp" />
     <ClCompile Include="QLearning.cpp" />
     <ClCompile Include="Seek.cpp" />
