@@ -21,5 +21,6 @@ public:
 	int getAcao(int estado, vector<int>* acoes);
 
 	void salvar(string nomeArquivo);
+	void carregar(string nomeArquivo);
 };
 

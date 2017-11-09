@@ -116,3 +116,8 @@ void QLearning::salvar(string nomeArquivo)
 {
 	armazem->salvar(nomeArquivo);
 }
+
+void QLearning::carregar(string nomeArquivo)
+{
+	armazem->carregar(nomeArquivo);
+}

@@ -44,5 +44,6 @@ public:
 	void setNu(float nu);
 
 	void salvar(string nomeArquivo);
+	void carregar(string nomeArquivo);
 };
 

@@ -70,3 +70,17 @@ void QArmazenaValor::salvar(string nomeArquivo)
 	}
 	saida.close();
 }
+
+void QArmazenaValor::carregar(string nomeArquivo){
+	ifstream entrada(nomeArquivo);
+	entrada >> estados;
+	entrada >> acoes;
+	matriz = new float*[estados];
+	for (int i = 0; i < estados; i++) {
+		matriz[i] = new float[acoes];
+		for (int j = 0; j < acoes; j++) {
+			entrada >> matriz[i][j];
+		}
+	}
+	entrada.close();
+}
